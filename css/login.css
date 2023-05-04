@@ -167,9 +167,10 @@ hr{
   .container {
     flex-direction: column;
     background-color: #fff;
+    margin: 0 auto;
   }
   .container-left {
-    min-width: 100%;
+    /* min-width: 100%; */
     min-height: 50vh;
     float: none;
     box-shadow: none;
@@ -186,6 +187,9 @@ hr{
     -moz-box-shadow: none;
     box-shadow: none;
   }
+  .info {
+    margin: 3vw 2vw 0vw 11vw;
+}
   .login {
     font-size: 0.7rem;
     position: absolute;
@@ -197,18 +201,22 @@ hr{
     width: max(15vw, 20%);
   }
   .contactForm {
-    width: 80%;
+    width: 75%;
   }
   #img-side {
     display: none;
   }
+  h2{
+    display: none;
+  }
 }
-@media only screen and (max-width: 400px) and (min-width: 320px) {
+@media only screen and (max-width: 450px){
     html{
         background-color: #fff;
     }
   .container {
     flex-direction: column;
+    margin: 0 auto;
   }
   .container-left,
   .container-right {
@@ -237,6 +245,12 @@ hr{
   .contactForm .inputBox {
     width: 100%;
     margin: 1rem;
+  }
+  .contactForm .inputBox input{
+    width: 90%;
+  }
+  h2{
+    display: none;
   }
   .con-logo {
     display: none;
